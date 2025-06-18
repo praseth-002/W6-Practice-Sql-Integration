@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getArticleById, createArticle, updateArticle } from "../services/api";
+import ArticleCard from "./ArticleCard";
 
 export default function ArticleForm({ isEdit }) {
   const { id } = useParams();
